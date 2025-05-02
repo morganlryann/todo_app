@@ -1,6 +1,10 @@
+# Simple To-Do List App with Mark as Done feature
+
+# Each task will be stored as a dictionary: {"name": "Do laundry", "done": False}
 tasks = []
 
-def add_task(task):
+def add_task(task_name):
+    task = {"name": task_name, "done": False}
     tasks.append(task)
     print(f"Added: {task}")
 
